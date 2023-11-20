@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="AssetsLogin.css">
+    <link rel="stylesheet" href="fontawesome-free/css/all.min.css">
+    <link rel="shortcut icon" href="./img/Logo.ico">
+  </head>
+  <body>
+    <div class="main-container">
+    <header>
+      <div class="header-container">
+        <div class="header">
+          <!-- <a href="." target="_blank"><img src="./img/Logomarca.png"></a> -->
+          <ul>
+            <a href="/"><li>Home</li></a>
+            <a href="/"><li>About Us</li></a>
+            <a href="/"><li>Suporte</li></a>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="logomarca">
+        <img id="logomarca" src="./img/Logomarca.png">
+      </div>
+      <div class="login-container">
+        <form action="get" class="formLogin">
+          <h1>Login</h1>
+          <label for="email">Email</label>
+          <input class="inputs" type="email"
+          name="email"
+          id="email"
+          placeholder="Informe seu email"
+          required>
+          <label for="senha">Senha</label>
+          <input class="inputs" type="password"
+          name="senha"
+          id="senha"
+          placeholder="Insira sua senha"
+          required>
+          <a href=".">Esqueci a senha</a>
+          <input type="submit" id="btn" value="Acessar" class="btn">
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+    <div class="instagram-logo-container">
+      <a href="." target="_blank"><img id="instagram" src="/img/instagram.png" width="38px" alt="instagram" ></a>
+    </div>
+    <div class="whatsapp-logo-container"> 
+      <a href="." target="_blank"><img id="whatsapp" src="/img/whatsapp.png" width="44px" alt="whatsapp" ></a>
+    </div> 
+    </footer>
+  </div>
+  </body>
+</html> 

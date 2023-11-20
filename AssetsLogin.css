@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+ body{
+  background-image: url(./img/Fundo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Inter', sans-serif ;
+ }
+ 
+.main-container {
+  position: relative;
+}
+
+.header-container{
+  width: 100%;
+  height: 5rem;
+  background-color: transparent;
+  position: relative;
+  top: 0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+@media screen and (max-width: 492px) {
+  .header-container {
+    justify-content: space-evenly;
+    height: 5rem;
+  }
+  .header li {
+    padding:0
+  }
+}
+
+.header li{
+  list-style: none;
+  display: inline;
+  margin-left: 0.5rem;
+  color: #fff;
+  font-weight: 700;
+  padding-right: 2rem;
+  transition: 0.5s;
+}
+
+.header a {
+  text-decoration: none;
+  
+}
+
+.header li:hover {
+  font-size: 20px;
+}
+
+.header img{
+  width: 65px;
+  position: absolute;
+  left: 50px;
+  top: 10px
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.main img{
+  width: 8rem;
+  margin-top: 2rem;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  position: relative;
+  margin-top: 3rem;
+}
+
+.image {
+    width: 500px;
+}
+
+.formLogin {
+  display: flex;
+  flex-flow: column;
+  border: 0.14rem solid #fff;
+  padding: 1rem 2rem 2rem 2rem;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.formLogin h1 {
+  font-size: 2rem;
+  padding: 1rem 0;
+  color: #fff;
+  font-weight: 700;
+}
+
+.inputs{
+  border-radius: 5px;
+  border: transparent;
+  padding: 0.7rem 5.0rem 0.7rem 0.5rem;
+  outline: none;
+}
+
+.formLogin label {
+  padding: 0.5rem;
+  color: #fff;
+  margin-top: 0.7rem;
+}
+
+.btn {
+  margin-top: 1.5rem;
+  background-color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+  color: #213e59;
+  border: 0.1rem #213e59 solid;
+  border-radius: 0.3rem;
+  padding: 0.7rem;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #fff;
+  backdrop-filter: blur(5px);
+  border: 0.1rem #fff solid;
+}
+
+.formLogin a {
+  padding: 1rem;
+  text-decoration: none;
+  position: relative;
+  color: #fff;
+  align-self: center;
+}
+
+.formLogin a:hover {
+  color: #006aff;
+}
+
+.footer{
+  background-color: transparent;
+  width: 100%;
+  height: 5rem;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 9rem;
+}
+
+.footer h2 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 5rem;
+}
+
+.instagram-logo-container, .whatsapp-logo-container {
+  transition: 1s;
+}
+
+.instagram-logo-container:hover {
+  transform: rotate(360deg);
+}
+
+.whatsapp-logo-container:hover {
+  transform: rotate(360deg);
+}
