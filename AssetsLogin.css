@@ -10,8 +10,10 @@
   background-image: url(./img/Fundo.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;  
   font-family: 'Inter', sans-serif ;
+  height: 100%;
+  width: 100%;
  }
  
 .main-container {
@@ -84,7 +86,7 @@
   align-content: center;
   width: 100%;
   position: relative;
-  margin-top: 3rem;
+  margin-top: 8rem;
 }
 
 .image {
@@ -110,10 +112,33 @@
 }
 
 .inputs{
-  border-radius: 5px;
   border: transparent;
   padding: 0.7rem 5.0rem 0.7rem 0.5rem;
   outline: none;
+  background-color: transparent;
+  border-bottom: #fff 1px solid;
+  color: #fff;
+}
+
+.inputs::placeholder {
+  color: #fff;
+}
+
+#locker-icon, #email-icon {
+  color: #fff;
+  font-size: 0.9rem;
+  right: 2.8rem;
+  position: absolute;
+}
+
+#locker-icon{
+  bottom: 9.7rem;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+#email-icon {
+  top: 9.1rem;
 }
 
 .formLogin label {
@@ -124,20 +149,20 @@
 
 .btn {
   margin-top: 1.5rem;
-  background-color: #fff;
+  background-color: transparent;
   cursor: pointer;
-  transition: 0.5s;
-  color: #213e59;
-  border: 0.1rem #213e59 solid;
+  transition: 0.3s;
+  color: #fff;
+  border: 0.1rem #fff solid;
   border-radius: 0.3rem;
   padding: 0.7rem;
+  backdrop-filter: blur(5px);
 }
 
 .btn:hover {
-  background-color: transparent;
-  color: #fff;
-  backdrop-filter: blur(5px);
-  border: 0.1rem #fff solid;
+  background-color: #fff;
+  color: #213e59;
+  border: 0.1rem #213e59 solid;
 }
 
 .formLogin a {

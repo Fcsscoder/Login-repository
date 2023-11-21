@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="AssetsLogin.css">
     <link rel="stylesheet" href="fontawesome-free/css/all.min.css">
     <link rel="shortcut icon" href="./img/Logo.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <div class="main-container">
     <header>
       <div class="header-container">
         <div class="header">
-          <!-- <a href="." target="_blank"><img src="./img/Logomarca.png"></a> -->
+          <a href="." target="_blank"><img src="./img/Logomarca.png"></a>
           <ul>
             <a href="/"><li>Home</li></a>
             <a href="/"><li>About Us</li></a>
@@ -26,18 +27,20 @@
     </header>
     <main class="main">
       <div class="logomarca">
-        <img id="logomarca" src="./img/Logomarca.png">
+        <!-- <img id="logomarca" src="./img/Logomarca.png"> -->
       </div>
       <div class="login-container">
         <form action="get" class="formLogin">
           <h1>Login</h1>
           <label for="email">Email</label>
+          <p id="email-icon"><i class="fa-regular fa-envelope"></i></p>
           <input class="inputs" type="email"
           name="email"
           id="email"
           placeholder="Informe seu email"
           required>
           <label for="senha">Senha</label>
+          <p id="locker-icon"><i class="fa-solid fa-lock"></i></p>
           <input class="inputs" type="password"
           name="senha"
           id="senha"
